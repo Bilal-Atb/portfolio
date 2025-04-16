@@ -252,8 +252,9 @@ ul {
     color: #5263ff;
     border-radius: 20px;
     box-shadow: 0 12px 15px #0004ff;
-    width: 125%;
-    padding: 2%;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 
     h3 {
         padding: 20px;
@@ -278,7 +279,6 @@ ul {
 
     textarea {
         display: flex;
-        margin: 5px;
         padding: 5px 11px;
         background: #5263ff4a;
         backdrop-filter: blur(4px);
@@ -288,6 +288,7 @@ ul {
         height: 200px;
         width: 350px;
         color: white;
+        margin: 15px;
 
 
     }
@@ -554,3 +555,35 @@ section {
 
     }
 }
+body {
+    background: linear-gradient(135deg, #020b2f 0%, #1c1f4a 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .button:hover {
+    background: #4052d7;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  input, textarea {
+    border: none;
+    background-color: #2c2f5a;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #5263ff;
+    background-color: #3a3f70;
+  }
+      
